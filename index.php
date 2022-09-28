@@ -12,5 +12,6 @@ print '<p> Jacob M. Tracy </p>';
 print '<h1>HTML with PHP</h1>';
 print '<div id="browser"></div>';
 print '<script src="getBrowser.js"></script>';
+print' <a href="./form_test/formtest.php">Pizza Form</a>';
 print '</html>';
 ?>

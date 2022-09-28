@@ -1,0 +1,34 @@
+<?php
+print '<!DOCTYPE HTML>';
+print '<html>';
+print '<html lang="en">';
+print '<head>';
+print '<meta charset="utf-8">';
+print '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+print '<title>HTML Form Test</title>';
+print '<link rel="stylesheet" href="formtest_styles.css">';
+print '</head>';
+print '<body>';
+print '<div>';
+print '<form action="phpost.php" method="POST">';
+print '<fieldset>';
+print '<legend>Name</legend>';
+print '*First Name:<br/><input name="firstname" required="" type="text"/><br/>';
+print '*Last Name:<br/><input name="lastname" required="" type="text"/>';
+print '</fieldset><fieldset>';
+print '<legend>Items</legend>';
+print '*Toppings<br/>';
+print '<label><input name="pizzatype" required="" type="radio" value="cheese"/>Cheese</label>';
+print '<label><input name="pizzatype" type="radio" value="veggie"/>Veggie</label>';
+print '<label><input name="pizzatype" type="radio" value="supreme" />Supreme</label><br/>';
+print '*Quantity:<br/><input name="quantity" required="" type="number"/><br/>';
+print '*Size:<br/>';
+print '<label><input name="size" type="radio" value="small"/>Small</label>';
+print '<label><input name="size" type="radio" value="medium"/>Medium</label>';
+print '<label><input name="size" type="radio" value="large" />Large</label><br/>';
+print '<label>Simulate using GET instead of Post?<input name="getTest" type="checkbox" value="get"></label><br/>';
+print '<label>Force an invalid variable error?<input name="break" type="checkbox" value="breakme"></label>';
+print '<br/><br/><input type="submit" value="continue"/>';
+print '</fieldset></form></div>';
+print '</body></html>';
+?>
