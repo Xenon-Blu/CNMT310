@@ -13,6 +13,7 @@ print "<h1>HTML with PHP</h1>";
 print "<div id=\"browser\"></div>";
 print "<script src=\"getBrowser.js\"></script>";
 print " <a href=\"./pizza-form/pizza-step1.php\">Pizza Form</a>";
-print " <a href=\"./session.php\">Session</a>";
+print " <a href=\"./session/session0.php\">Session Test</a>";
+print " <a href=\"./session/session1.php\">Session Lab</a>";
 print "</html>";
 ?>
