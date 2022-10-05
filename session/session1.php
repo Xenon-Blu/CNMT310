@@ -5,7 +5,7 @@ print "<!doctype html>\n";
 print "<html lang=\"en\">";
 print "<head>\n";
 print "<meta charset=\"utf-8\">";
-print "<title>PHP Form Lab</title>\n";
+print "<title>PHP Session 1</title>\n";
 print "</head>\n";
 print "<body>\n";
 if (isset($_SESSION['error'])){

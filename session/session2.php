@@ -11,7 +11,7 @@ print "<!doctype html>\n";
 print "<html lang=\"en\">";
 print "<head>\n";
 print "<meta charset=\"utf-8\">";
-print "<title>PHP Form Lab</title>\n";
+print "<title>PHP Session 2</title>\n";
 print "</head>\n";
 print "<body>\n";
 print ("First Visit: ".date('d-m-Y H:i:s',($_SESSION['firstVisit'])));
