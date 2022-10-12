@@ -16,5 +16,6 @@ print " <a href=\"./pizza-form/pizza-step1.php\">Pizza Form</a>";
 print " <a href=\"./session/session0.php\">Session Test</a>";
 print " <a href=\"./session/session1.php\">Session Lab</a>";
 print " <a href=\"./class/class-step1.php\">Session Assignment</a>";
+print " <a href=\"./template/class-step1.php\">Template Lab</a>";
 print "</html>";
 ?>
