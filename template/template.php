@@ -22,7 +22,7 @@
 * @author Steve Suehring <steve.suehring@uwsp.edu>
 */
 
-class Template {
+class template {
 
   protected $_top;
   protected $_bottom;
