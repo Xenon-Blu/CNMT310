@@ -1,6 +1,6 @@
 <?php
 // Template Create
-require_once("./pages/template/template.php");
+require_once("./template/template.php");
 $page = new Template("index.php");
 $page->addHeadElement("<link rel=\"stylesheet\" href=\"styles.css\">");
 $page->finalizeTopSection();
