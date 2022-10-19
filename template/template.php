@@ -88,7 +88,7 @@ class Template {
   */
 
   function addBottomElement($include) {
-    $this->_bottomSection .= $include . "\n";
+    $this->_bottomElements[] .= $include . "\n";
   } //end function addHeadElement
 
   function finalizeBottomSection() {
