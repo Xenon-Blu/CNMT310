@@ -26,8 +26,7 @@ class ClassData {
                     "classCode" => "CNMT",
                     "classNum" => "210",
                     "instructor" => "Staff",
-                    "meetingTime" => "online",
-                  ),
+                    "meetingTime" => "online"),
               array("classId" => "090126",
                     "className" => "Online Streaming",
                     "classCode" => "MSTU",
@@ -40,12 +39,6 @@ class ClassData {
                     "classNum" => "333",
                     "instructor" => "Hill",
                     "meetingTime" => "MW 15:00-16:15"),
-              array("classId" => "090126",
-                    "className" => "Online Streaming",
-                    "classCode" => "CNMT",
-                    "classNum" => "303",
-                    "instructor" => "Suehring",
-                    "meetingTime" => "M 18:00-19:50"),
             );
 
   public function getClassById($classId) {
