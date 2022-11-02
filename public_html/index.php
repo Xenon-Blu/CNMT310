@@ -20,6 +20,7 @@ print " <a href=\"./session/session1.php\">Session Lab</a><br/>";
 print " <a href=\"./class/class-step1.php\">Session Assignment</a><br/>";
 print " <a href=\"./template/class-step1.php\">Template Lab</a><br/>";
 print " <a href=\"./registration/regIndex.php\">Registration Assignment</a><br/>";
+print " <a href=\"./final/form.php\">Group Final - Auth Form</a><br/>";
 // Print Bottom Section
 print $page->getBottomSection();
 // --------------------
