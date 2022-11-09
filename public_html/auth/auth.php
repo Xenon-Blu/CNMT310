@@ -41,8 +41,16 @@ if ($wsResult->result == "Success") {
   // Success means setting things in session
   // Then redirect.
   $userData = $wsResult->data;
-  print "Successful authentication";
-} else if ($wsResult->result == "Fail") {
+}
+if ($userData->user_role == "admin"){
+	//If admin, send to admin page
+	die(header("Location: ../adminPage.php"));
+}
+if ($userData->user_role == "student"){
+	//If student, send to student page
+	die(header("Location: ../studentPage.php"));
+}
+else if ($wsResult->result == "Fail") {
   $_SESSION['error'][] =  "Failed to authenticate, invalid username or password.";
   die(header("Location: ./form.php", TRUE, 301));
   exit;
@@ -50,7 +58,7 @@ if ($wsResult->result == "Success") {
   //Likely do not print "Error" conditions because they
   // mean that there's something else wrong in the code
   // Use var_dump() while testing, if needed
-  $_SESSION['error'][] = "A code error has occurred.";
+  $_SESSION['error'][] = "Code Error.";
   die(header("Location: ./form.php", TRUE, 301));
 }
    
