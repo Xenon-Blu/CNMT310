@@ -1,4 +1,4 @@
 {
-  "apikey": "apikey here", //replace this with your API key
-  "apihash": "apihash here"//replace this with your API hash
+  "apikey": "replace this with your private api key",
+  "apihash": "replace this with your private api hash"
 }
