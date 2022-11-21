@@ -17,6 +17,11 @@ print "Username: <input type=\"text\" name=\"username\"><br>" . PHP_EOL;
 print "Password: <input type=\"password\" name=\"password\"><br>" . PHP_EOL;
 print "<input type=\"submit\" name=\"submit\"><br>" . PHP_EOL;
 print "</form>" . PHP_EOL;
+
+//Public View Button
+print "<form action=\"../publicView.php\"  method=\"POST\">";
+print	"<input type='submit' name='publicSubmit' class='button' value='Public View' />";
+
 if (isset($_SESSION['error']) && is_array($_SESSION['error']) && count($_SESSION['error']) > 0) {
   foreach ($_SESSION['error'] as $err => $errMsg) {
     print "\t\t<div class=\"error\">" . $errMsg . "</div>\n";
