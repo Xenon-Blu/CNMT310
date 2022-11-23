@@ -11,6 +11,7 @@ print "<body>";
 print "<h1>jQuery</h1>";
 print "<script src=\"getBrowser.js\"></script>";
 print " <a href=\"./example1.html\">Example 1</a><br/>";
+print " <a href=\"./example2.html\">Example 2</a><br/>";
 // Print Bottom Section
 print $page->getBottomSection();
 // --------------------
