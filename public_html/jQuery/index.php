@@ -14,6 +14,7 @@ print " <a href=\"./example1.html\">Example 1</a><br/>";
 print " <a href=\"./example2.html\">Example 2</a><br/>";
 print " <a href=\"./example3.html\">Example 3</a><br/>";
 print " <a href=\"./example4.html\">Example 4</a><br/>";
+print " <a href=\"./example5.html\">Example 5</a><br/>";
 // Print Bottom Section
 print $page->getBottomSection();
 // --------------------
