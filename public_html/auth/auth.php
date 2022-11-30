@@ -3,8 +3,8 @@ session_start();
 // Change these paths to the location of your files.
 require_once("./WebServiceClient.php");
 // Credentials file must be outside of document root, as discussed in class
-require_once("../../no_commit/creds.json");
-$json = file_get_contents("../../no_commit/creds.json");
+require_once("../../ignore/creds.json");
+$json = file_get_contents("../../ignore/creds.json");
 $datapull = json_decode($json, true);
 // Production code will need additional checks here,
 // and proper error messaging handling through session.

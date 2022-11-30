@@ -18,8 +18,10 @@
 		password: "1234"
       },
 	  method: "post",
+	  dataType: "json",
 	     success: function(data) {
-        $("#results").append(data);
+		 console.log(data);
+        $("#results").append(data.userid);
 		}
     });
   });
