@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery AJAX Main Page</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  //https://api.jquery.com/jquery.ajax/
+  $(function() {
+    $.ajax({
+      url: "https://cnmtsrv2.uwsp.edu/~ssuehrin/post.php",
+      cache: false,
+	  data: {
+		username: "piplup",
+		password: "1234"
+      },
+	  method: "post",
+	     success: function(data) {
+        $("#results").append(data);
+		}
+    });
+  });
+  </script>
+</head>
+<body>
+ 
+<div class="ui-widget" id="results">
+</div>
+ 
+ 
+</body>
+</html>
