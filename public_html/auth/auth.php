@@ -43,12 +43,16 @@ if ($wsResult->result == "Success") {
   $userData = $wsResult->data;
 }
 if ($userData->user_role == "admin"){
+	$_SESSION["role"]="admin";
 	//If admin, send to admin page
 	die(header("Location: ../adminPage.php"));
+	exit;
 }
 if ($userData->user_role == "student"){
+	$_SESSION["role"]="student";
 	//If student, send to student page
 	die(header("Location: ../studentPage.php"));
+	exit;
 }
 else if ($wsResult->result == "Fail") {
   $_SESSION['error'][] =  "Failed to authenticate, invalid username or password.";

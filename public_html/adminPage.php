@@ -1,4 +1,9 @@
 <?php
+session_start();
+if ($_SESSION["role"]!= "admin"){
+	$_SESSION['error'][] =  "Access denied, this requires elevation.";
+	die(header("Location: ./auth/form.php"));
+}
 //This file needs 'Template.php'
 require_once("./template/template.php");
 
