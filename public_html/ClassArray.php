@@ -1,7 +1,6 @@
 <?php
 
 class ClassArray {
-
   private $classInfo = array(
               array("classId" => "10",
                     "className" => "Principles of Computing",
@@ -35,11 +34,13 @@ class ClassArray {
                     "meetingTime" => "M 18:00-19:50"),
             );
 
-
-
   public function getClassList() {
     return $this->classInfo;
   }
-
+//Incomplete createClass Function
+  public function createClass($classId, $className, $classCode, $classNum, $instructor, $meetingTime) {
+	$class = new array($classId, $className, $classCode, $classNum, $instructor, $meetingTime);
+	$this->classInfo = array_push($this->classInfo, $class);
+  }
 }
 

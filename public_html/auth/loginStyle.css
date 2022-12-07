@@ -1,17 +1,15 @@
 /* THESE COLORS/STYLES ARE NOT FINAL AND ARE FOR TESTING PURPOSES ONLY*/
 /*colors and styles the login block*/
-
 div {
 	text-align: center;
 	margin-top: 15%;
-	background-color: cyan;
+	background-color: #005DA6;
 	padding: 20px 0px 20px 0px;
 }
 
-/*Color for cursor hover and onClick respectively */
+/*Color for cursor hover and on Click respectively */
 .button:hover, .submit:hover {
-	background-color:  #9dd5c9 ;
+	background-color:  #9dd5c9;
 }
 .button:active, .submit:active {
 	background-color: red;
-}

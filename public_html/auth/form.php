@@ -2,7 +2,7 @@
 session_start();
 require_once( "../template/BStemplate.php");
 $page = new BStemplate("Auth");
-$page->addHeadElement(" <link rel = \"stylesheet\" type = \"text/css\" href = \"./loginStyle.css\">");
+$page->addHeadElement("<link rel=\"stylesheet\" type=\"text/css\"href =\"./loginStyle.css\">");
 $page->finalizeTopSection();
 
 //Some libraries require things to be added before the closing body tag.
@@ -15,9 +15,9 @@ print $page->getTopSection();
 print "<div>";
 print "\t<h1>Login</h1>\n";
 print "<form action=\"auth.php\" method=\"POST\">" . PHP_EOL;
-print "Username: <input type=\"text\" name=\"username\"><br>" . PHP_EOL;
-print "Password: <input type=\"password\" name=\"password\"><br>" . PHP_EOL;
-print "<input type=\"submit\" class=\"submit\" name=\"submit\"><br>" . PHP_EOL;
+print "<h3>Username:</h3><input type=\"text\" name=\"username\">" . PHP_EOL;
+print "<h3>Password:</h3><input type=\"password\" name=\"password\">" . PHP_EOL;
+print "<br><input type=\"submit\" class=\"submit\" name=\"submit\" value=\"Login\"><br>" . PHP_EOL;
 print "</form>" . PHP_EOL;
 
 //Public View Button
