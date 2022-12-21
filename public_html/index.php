@@ -23,7 +23,7 @@ print " <a href=\"./registration/regIndex.php\">Registration Assignment</a><br/>
 print " <a href=\"./ac.html\">ac.html</a><br/>";
 print " <a href=\"./jQuery/index.php\">jQuery Autocomplete</a><br/>";
 print " <a href=\"./example3.html\">AJAX</a><br/>";
-print " <a href=\"./auth/form.php\">Group Final - Auth Form</a><br/>";
+print " <a href=\"./search.php\">Autocomplete - Class Search</a><br/>";
 // Print Bottom Section
 print $page->getBottomSection();
 // --------------------
